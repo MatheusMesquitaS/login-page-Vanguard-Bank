@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    width: 430px;
+    height: 932px;
+    background: url(img/apertodemao_vanguard\ \(2\).jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.logo {
+    padding: 32px;
+}
+
+.containerNome {
+    display: flex;
+    color: #f75f09;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    /* font-weight: 700; */
+    font-size: 30px;
+
+}
+
+.logoNome {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infos form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    width: 353px;
+    height: 331px;
+    background-color: #ffffff;
+    border-radius: 24px;
+   
+}
+
+.infos input {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: #f75f09 solid 1px;
+    outline: none;
+}
+
+#btnCriar{
+    background-color: #f75f09;
+    /* border-bottom: #ccc 4px solid; */
+    color: white;
+    margin-top: 20px;
+}
+
+#btnCriar:hover{
+    background-color: #ccc;
+    color: #f75f09;
+    transition: ease-in .4s;
+    font-weight: 700;
+}
+
+#forgotPass{
+    color: #f75f09;
+}
+
+.revealBtn{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    
+}
+
+.revealBtn button{
+    background:none;
+    outline: none;
+    border: none;
+}
+
+.revealBtn button:hover{
+   cursor: pointer;
+   filter: drop-shadow(0.6rem 0.6rem 1rem rgb(255, 157, 0))
+}
+
+.remindAccount {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.containerInfo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 27px;
+    margin-bottom: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #f75f09;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #f75f09;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(22px);
+}
+
+
+.slider.round {
+    border-radius: 44px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
